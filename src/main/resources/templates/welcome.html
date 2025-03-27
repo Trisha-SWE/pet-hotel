@@ -1,141 +1,353 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
-
+<html>
+<!-- <html xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}"> -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pet Care | Home</title>
-  <link rel="icon" href="/static/resources/images/pet-logo.svg" type="image/svg+xml">
-  <style>
-      body {
-          background: #f8f9fa;
-          font-family: 'Arial', sans-serif;
-          color: #333;
-      }
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="icon" th:href="/resources/images/pet-tab-icon.svg" type="image/svg+xml"> -->
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{/resources/images/pet-tab-icon.svg}">
+  
+    <title>Pet Care | Hotel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-      h2 {
-          color: #28a745;
-          font-size: 2rem;
-          text-align: center;
-          margin-top: 30px;
-      }
-
-      .room-card {
-          border: 1px solid #ddd;
-          border-radius: 12px;
-          overflow: hidden;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-          transition: transform 0.3s, box-shadow 0.3s;
-          margin-bottom: 20px;
-          background-color: #ffffff;
-          position: relative;
-      }
-
-      .room-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      }
-
-      .room-image {
-          width: 100%;
-          height: 220px;
-          object-fit: cover;
-          border-bottom: 3px solid #ddd;
-      }
-
-      .price-tag {
-          position: absolute;
-          top: 15px;
-          left: 15px;
-          background: #28a745;
-          color: white;
-          padding: 8px 12px;
-          border-radius: 8px;
-          font-weight: bold;
-          font-size: 16px;
-      }
-
-      .stars {
-          color: gold;
-          margin: 5px 0;
-      }
-
-      .btn-details {
-          background: #007bff;
-          color: white;
-          border: none;
-          padding: 10px 20px;
-          border-radius: 8px;
-          transition: 0.3s;
-          text-decoration: none;
-          display: inline-block;
-          font-weight: bold;
-          margin-top: 15px;
-      }
-
-      .btn-details:hover {
-          background: #0056b3;
-          text-decoration: none;
-          color: white;
-      }
-
-      .card-body p {
-          font-size: 14px;
-          color: #555;
-      }
-
-      .row {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 20px;
-          justify-content: center;
-          margin-top: 20px;
-      }
-
-      .col-md-3 {
-          flex: 1 1 22%;
-          max-width: 22%;
-          margin-bottom: 20px;
-      }
-
-      .col-md-3 img {
-          border-radius: 10px;
-      }
-
-      @media (max-width: 768px) {
-          .col-md-3 {
-              flex: 1 1 48%;
-              max-width: 48%;
-          }
-      }
-
-      @media (max-width: 480px) {
-          .col-md-3 {
-              flex: 1 1 100%;
-              max-width: 100%;
-          }
-      }
-  </style>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  
+    <link th:href="@{/webjars/font-awesome/css/font-awesome.min.css}" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/resources/css/petclinic.css}" />
+  
 </head>
 
 <body>
+    <style>
+        body {
+            background: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+  
+        h2 {
+            color: #0092b1;
+            font-size: 2rem;
+            text-align: center;
+            margin: 60px auto;
+        }
+  
+        .room-card {
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            position: relative;
+        }
+  
+        .room-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+  
+        .room-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-bottom: 3px solid #ddd;
+        }
+  
+        .price-tag {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: #28a745;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+  
+        .stars {
+            color: gold;
+            margin: 0;
+            font-size: 22px;
+        }
+  
+        .btn-details {
+            background: #0092b1;
+            color: white;
+            border: none;
+            padding: 7px;
+            border-radius: 5px;
+            transition: 0.3s;
+            text-decoration: none;
+            display: block;
+            font-weight: 500;
+            width: 100%;
+            text-align: center;
+            margin: 20px 0 0 0;
+            box-sizing: border-box;
+        }
+  
+        .btn-details:hover {
+            background: #0056b3;
+            text-decoration: none;
+            color: white;
+        }
+  
+        .card-body p {
+            font-size: 14px;
+            color: #555;
+            margin: auto;
+        }
+        .card-body {
+            padding: 10px 20px;
+        }
+        .card-body h5 {
+            font-size: 25px;
+            margin: 2px auto 10px auto;
+            text-align: center;
+        }
+  
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+  
+        .col-md-3 {
+            flex: 1 1 22%;
+            max-width: 22%;
+            margin-bottom: 20px;
+        }
+  
+        .col-md-3 img {
+            border-radius: 10px;
+        }
+  
+        @media (max-width: 768px) {
+            .col-md-3 {
+                flex: 1 1 48%;
+                max-width: 48%;
+            }
+        }
+  
+        @media (max-width: 480px) {
+            .col-md-3 {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
 
-    <h2 th:text="#{welcome}">Welcome to Pet Hotel</h2>
-    <!-- <div class="row">
-        <div class="col-md-12">
-          <img class="img-responsive" src="../static/resources/images/spring-logo-dataflow.png" th:src="@{/resources/images/spring-logo-dataflow.png}"/>
-        </div>
-    </div> -->
+/* Fixed Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #ffffff;
+    border-bottom: 1px solid #0092b1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    padding: 0px 20px; /* left-right padding */
+}
+
+/* Logo Image */
+.logo-img {
+    height: 50px;
+    width: auto;
+    margin-top: -4px;
+}
+
+/* Flexbox to separate logo left & menu right */
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Nav Links */
+.navbar-nav {
+    margin-left: auto; /* push to right */
+}
+
+.navbar-nav li a {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 18px;
+    color: #333;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Hover effect */
+.navbar-nav li a:hover {
+    background-color: #079fc1;
+    color: #fff;
+}
+
+/* Active link */
+.navbar-nav li a.active {
+    background-color: #0092b1;
+    color: #fff !important;
+}
+
+/* Navbar toggler */
+.navbar-toggler {
+    border: none;
+    padding: 4px 6px;
+}
+
+/* Custom toggle icon */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    width: 25px;
+    height: 25px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 45px;
+    }
+
+    .navbar-collapse {
+        background: #f9f9f9;
+        padding: 8px 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    /* toggle close button */
+    .navbar-collapse::before {
+        content: "✕ Close";
+        display: block;
+        text-align: right;
+        padding: 5px 0;
+        font-size: 14px;
+        cursor: pointer;
+        color: #0092b1;
+    }
+
+    /* clicking close text will close */
+    .navbar-collapse::before:hover {
+        color: #079fc1;
+    }
+}
+
+footer {
+    background: #142646;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+footer img {
+    height: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #0092b1;
+}
+
+footer i {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+footer i:hover {
+    color: #0092b1;
+}
+
+/* Copyright Style */
+footer small {
+    font-size: 12px;
+    color: #aaa;
+}
+
+footer small a {
+    color: #ffc107;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer small a:hover {
+    color: #00c8ff;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    footer .row > div {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
+
+    </style>
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
+  <div class="container-fluid">
+      <!-- Logo Image -->
+      <a class="navbar-brand" href="/">
+        <img src="../resources/images/pet-logo.svg" alt="Logo" class="logo-img">
+      </a>
+
+      <!-- Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+              <li><a class="nav-link" href="/">Home</a></li>
+              <li><a class="nav-link" href="/owners/find">Find Owners</a></li>
+              <li><a class="nav-link" href="/vets.html">Veterinarians</a></li>
+              <li><a class="nav-link" href="/oups">Contact</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+
 
     <div class="row">
+      <h2>Welcome to Pet Care</h2>
         <!-- Card 1 -->
         <div class="col-md-3">
           <div class="room-card">
               <div class="price-tag">1600 BDT/night</div>
-              <img class="room-image" src="../static/resources/images/room1.jpg" th:src="@{/resources/images/room1.jpg}" alt="Pet Room 1">
+              <img class="room-image" src="../resources/images/room1.jpg" alt="Pet Room 1">
               <div class="card-body p-3">
                   <h5>Deluxe Room</h5>
-                  <div class="pet-type">Dog</div>
+                  <div class="pet-type">Cat</div>
                   <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
                   <p>Booked by <b>80</b> customers</p>
                   <a href="#" class="btn-details">Show Details</a>
@@ -150,14 +362,13 @@
               <img class="room-image" src="../resources/images/room2.png" alt="Pet Room 2">
               <div class="card-body p-3">
                   <h5>Luxury Room</h5>
-                  <div class="pet-type">Cat & Dog</div>
+                  <div class="pet-type">Any Pet</div>
                   <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
                   <p>Booked by <b>150</b> customers</p>
                   <a href="#" class="btn-details">Show Details</a>
               </div>
           </div>
         </div>
-
 
 
 <!-- Card 3 -->
@@ -167,7 +378,7 @@
       <img class="room-image" src="../resources/images/room3.jpeg" alt="Pet Room 3">
       <div class="card-body p-3">
           <h5>Standard Room</h5>
-          <div class="pet-type">Any Pet</div>
+          <div class="pet-type">Dog</div>
           <div class="stars">&#9733; &#9733; &#9733; &#9734; &#9734;</div>
           <p>Booked by <b>45</b> customers</p>
           <a href="#" class="btn-details">Show Details</a>
@@ -257,7 +468,7 @@
       <img class="room-image" src="/resources/images/room9.jpg" alt="Pet Room 9">
       <div class="card-body p-3">
           <h5>Deluxe Room</h5>
-          <div class="pet-type">Any Pet</div>
+          <div class="pet-type">Fish</div>
           <div class="stars">&#9733; &#9733; &#9733; &#9734; &#9734;</div>
           <p>Booked by <b>65</b> customers</p>
           <a href="#" class="btn-details">Show Details</a>
@@ -272,7 +483,7 @@
       <img class="room-image" src="/resources/images/room10.webp" alt="Pet Room 10">
       <div class="card-body p-3">
           <h5>Family Room</h5>
-          <div class="pet-type">Han/murgi</div>
+          <div class="pet-type">Cat & Dog</div>
           <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
           <p>Booked by <b>75</b> customers</p>
           <a href="#" class="btn-details">Show Details</a>
@@ -310,9 +521,59 @@
   </div>
 </div>
 
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row align-items-center text-center text-md-start">
+
+            <!-- Logo -->
+            <div class="col-md-3 mb-3 mb-md-0">
+                <img src="/resources/images/footer-pet-logo.svg" alt="Logo" style="height: 50px;">
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-3 mb-3 mb-md-0">
+                <p style="margin: 2px auto; color: #fff;">petcare@gmail.com</p>
+                <p style="margin: 2px auto; color: #fff;">+880197621913</p>
+            </div>
+
+            <!-- Page Links -->
+            <div class="col-md-3 mb-3 mb-md-0">
+                <a href="/contact">Contact</a>
+                <a href="/about">About</a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="col-md-3">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="row mt-3 text-center">
+            <div class="col-12">
+                <small>
+                    Copyright © 2025 Pet Care | All Rights Reserved | Developed by 
+                    <a href="https://github.com/Trisha-SWE" target="_blank" style="color: #ffc107; text-decoration: none;">
+                        Rukaiya Akter Trisha
+                    </a>
+                </small>
+            </div>
+        </div>
 
     </div>
+</footer>
 
+
+
+
+</div>
 </body>
 
 </html> 

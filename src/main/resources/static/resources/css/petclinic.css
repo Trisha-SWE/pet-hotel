@@ -9429,66 +9429,6 @@ strong {
   font-weight: 700;
   font-family: "montserratregular", sans-serif; }
 
-.navbar {
-  border-top: 4px solid #6db33f;
-  background-color: #34302d;
-  margin-bottom: 0px;
-  border-bottom: 0;
-  border-left: 0;
-  border-right: 0; }
-
-.navbar a.navbar-brand {
-  background: url("../images/spring-logo-dataflow.png") -1px -1px no-repeat;
-  margin: 12px 0 6px;
-  width: 229px;
-  height: 46px;
-  display: inline-block;
-  text-decoration: none;
-  padding: 0; }
-
-.navbar a.navbar-brand span {
-  display: block;
-  width: 229px;
-  height: 46px;
-  background: url("../images/spring-logo-dataflow.png") -1px -48px no-repeat;
-  opacity: 0;
-  -moz-transition: opacity 0.12s ease-in-out;
-  -webkit-transition: opacity 0.12s ease-in-out;
-  -o-transition: opacity 0.12s ease-in-out; }
-
-.navbar a.navbar-brand:hover span {
-  opacity: 1; }
-
-.navbar li > a, .navbar-text {
-  font-family: "montserratregular", sans-serif;
-  text-shadow: none;
-  font-size: 14px;
-  /* line-height: 14px; */
-  padding: 28px 20px;
-  transition: all 0.15s;
-  -webkit-transition: all 0.15s;
-  -moz-transition: all 0.15s;
-  -o-transition: all 0.15s;
-  -ms-transition: all 0.15s; }
-
-.navbar li > a {
-  text-transform: uppercase; }
-
-.navbar .navbar-text {
-  margin-top: 0;
-  margin-bottom: 0; }
-
-.navbar li:hover > a {
-  color: #eeeeee;
-  background-color: #6db33f; }
-
-.navbar-toggle {
-  border-width: 0; }
-  .navbar-toggle .icon-bar + .icon-bar {
-    margin-top: 3px; }
-  .navbar-toggle .icon-bar {
-    width: 19px;
-    height: 3px; }
 
 @media (max-width: 768px) {
   .navbar-toggle {
@@ -9496,20 +9436,9 @@ strong {
     z-index: 9999;
     left: 0px;
     top: 0px; }
-  .navbar a.navbar-brand {
-    display: block;
-    margin: 0 auto 0 auto;
-    width: 148px;
-    height: 50px;
-    float: none;
-    background: url("../images/spring-logo-dataflow-mobile.png") 0 center no-repeat; }
   .homepage-billboard .homepage-subtitle {
     font-size: 21px;
     line-height: 21px; }
-  .navbar a.navbar-brand span {
-    display: none; }
-  .navbar {
-    border-top-width: 0; }
   .xd-container {
     margin-top: 20px;
     margin-bottom: 30px; }
@@ -9518,3 +9447,109 @@ strong {
     margin-bottom: 30px; } }
 
 /*# sourceMappingURL=../../../../../../target/petclinic.css.map */
+
+
+/* .room-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.room-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 3px solid #ddd;
+}
+
+.price-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #28a745;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.stars {
+  color: gold;
+  margin: 5px 0;
+  font-size: 23px;
+}
+
+.btn-details {
+  background: #0092b1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  margin: 20px 0 10px 25px;
+}
+
+.btn-details:hover {
+  background: #0056b3;
+  text-decoration: none;
+  color: white;
+}
+
+.card-body p {
+  font-size: 14px;
+  color: #555;
+  margin: auto;
+}
+.card-body {
+  padding: 10px 20px;
+}
+.card-body h5 {
+  font-size: 25px;
+  margin: 5px auto 15px auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.col-md-3 {
+  flex: 1 1 22%;
+  max-width: 22%;
+  margin-bottom: 20px;
+}
+
+.col-md-3 img {
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .col-md-3 {
+      flex: 1 1 48%;
+      max-width: 48%;
+  }
+}
+
+@media (max-width: 480px) {
+  .col-md-3 {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+} */
