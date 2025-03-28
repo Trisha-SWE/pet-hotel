@@ -33,13 +33,19 @@
             font-size: 40px;
             font-weight: bold;
             text-align: center;
-            margin: 45px auto;
+            margin: auto;
             padding-top: 100px;
         }
+
         h2 span {
             color: #000;
         }
-  
+        .title-p {
+            text-align: center;
+            padding: 0px 15px 20px 15px;
+            margin: auto;
+            font-size: 14px;
+        }
         .room-card {
             border: 1px solid #ddd;
             border-radius: 12px;
@@ -143,6 +149,10 @@
                 flex: 1 1 48%;
                 max-width: 48%;
             }
+            .row {
+                gap: 10px;
+                padding: 20px;
+            }
         }
   
         @media (max-width: 480px) {
@@ -164,7 +174,9 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     padding: 0px 20px; /* left-right padding */
 }
-
+.navbar a.navbar-brand{
+    background: none;
+}
 /* Logo Image */
 .logo-img {
     height: 50px;
@@ -253,7 +265,7 @@ footer {
     background: #142646;
     color: white;
     padding: 30px 0;
-    margin-top: 50px;
+    margin-top: 100px !important;
 }
 
 footer img {
@@ -339,6 +351,7 @@ footer small a:hover {
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: cursive !important;
 }
 
 .banner-text p {
@@ -348,13 +361,14 @@ footer small a:hover {
 
 @media (max-width: 768px) {
     .banner {
-        height: 250px;
+        height: 220px;
+        margin-top: 40px;
     }
     .banner-text h1 {
         font-size: 28px;
     }
     .banner-text p {
-        font-size: 14px;
+        display: none;
     }
 }
 
@@ -381,8 +395,9 @@ footer small a:hover {
       <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="navbar-nav mb-2 mb-lg-0">
               <li><a class="nav-link" href="/">Home</a></li>
-              <li><a class="nav-link" href="/owners/find">Find Owners</a></li>
-              <li><a class="nav-link" href="/vets.html">Veterinarians</a></li>
+              <!-- <li><a class="nav-link" href="/owners/find">Find Owners</a></li>
+              <li><a class="nav-link" href="/vets.html">Veterinarians</a></li> -->
+              <li><a class="nav-link" href="/oups">About</a></li>
               <li><a class="nav-link" href="/oups">Contact</a></li>
           </ul>
       </div>
@@ -401,7 +416,9 @@ footer small a:hover {
 
 
     <div class="row">
-      <h2>Pet <span>Room</span></h2>
+      <h2>Pet <span>Rooms</span></h2>
+      <p class="title-p">We provide the best pet rooms with a comfortable and safe environment.  
+        Your furry friends will feel at home with our top-notch facilities.</p>
         <!-- Card 1 -->
         <div class="col-md-3">
           <div class="room-card">
