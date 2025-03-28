@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" th:href="@{/resources/images/pet-tab-icon.svg}">
-  
+
     <title>Pet Care | Hotel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -14,111 +14,85 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
-  
+
     <link th:href="@{/webjars/font-awesome/css/font-awesome.min.css}" rel="stylesheet">
     <link rel="stylesheet" th:href="@{/resources/css/petclinic.css}" />
 </head>
 <body>
 <style>
-/* Form Title */
-h2 {
-    text-align: center;
-    font-size: 28px;
-    color: #0092b1;
-    font-weight: bold;
-    margin-top: 100px;
-    text-transform: uppercase;
-}
-
-.form-horizontal {
-    max-width: 500px;
-    margin: auto;
-}
-
-/* Centering the Form */
-#add-owner-form {
-    max-width: 600px;
-    margin: 20px auto;
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Form Labels */
-#add-owner-form label {
-    font-weight: bold;
-    font-size: 16px;
-    color: #444;
-    margin-bottom: 5px;
-    display: block;
-    text-transform: uppercase;
-}
-
-/* Form Input */
-#add-owner-form input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #0092b1;
-    border-radius: 5px;
-    font-size: 16px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-    margin-bottom: 10px;
-}
-
-/* Focus Effect */
-#add-owner-form input:focus {
-    border-color: #007a94;
-    box-shadow: 0px 0px 5px rgba(0, 146, 177, 0.5);
-    outline: none;
-}
-
-/* Error Messages */
-.help-inline p {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-}
-
-/* Button Styling */
-.form-buttons {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.btn-primary {
-    background: #0092b1;
-    border: none;
-    padding: 7px 20px;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 5px;
-    color: #fff;
-    text-transform: uppercase;
-    transition: 0.3s ease-in-out;
-    width: 48%;
-    text-align: center;
-}
-
-.btn-primary:hover {
-    background: #007a94;
-    transform: scale(1.05);
-}
-
-/* Form Group Styling */
-#add-owner-form .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .btn-primary {
-        width: 100%;
-    }
+    /* Terms Section */
+.terms-section { 
+    padding: 60px 20px; 
+    background-color: #f9f9f9; 
+    text-align: left; 
+} 
+ 
+.terms-section h2 { 
+    font-family: "Montserrat", sans-serif; 
+    font-size: 32px; 
+    font-weight: bold; 
+    color: #333; 
+    margin: 60px auto 20px auto; 
+} 
+ 
+.terms-section h3 { 
+    font-family: "Montserrat", sans-serif; 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #333; 
+    margin-top: 50px; 
+} 
+ 
+.terms-section p { 
+    font-family: "Arial", sans-serif; 
+    font-size: 16px; 
+    color: #666; 
+    line-height: 1.6; 
+    margin-bottom: 5px; 
+    text-align: left; 
+} 
+ 
+.terms-section ul { 
+    font-family: "Arial", sans-serif; 
+    font-size: 16px; 
+    color: #666; 
+    margin-left: 20px; 
+    list-style-type: disc; 
+} 
+ 
+.terms-section ul li { 
+    margin-bottom: 10px; 
+    text-align: left; 
+} 
+ 
+.terms-section .agreement-checkbox { 
+    margin-top: 30px; 
+    padding: 10px; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    align-items: center; 
+} 
+ 
+.terms-section .agreement-checkbox input { 
+    margin-right: 10px; 
+} 
+ 
+.terms-section .btn { 
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    background-color: #0092b1; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+} 
+ 
+.terms-section .btn:hover { 
+    background-color: #079fc1; 
 }
 
 
@@ -141,7 +115,7 @@ h2 {
     width: auto;
     margin-top: 0px;
 }
-.navbar a.navbar-brand {
+.navbar a.navbar-brand{
     background: none;
 }
 /* Flexbox to separate logo left & menu right */
@@ -222,7 +196,6 @@ h2 {
 }
 </style>
 
-
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
     <div class="container-fluid">
         <!-- Logo Image -->
@@ -239,39 +212,56 @@ h2 {
         <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="navbar-nav mb-2 mb-lg-0">
                 <li><a class="nav-link" href="/">Home</a></li>
-                <!-- <li><a class="nav-link" href="/owners/find">Find Owners</a></li>
-                <li><a class="nav-link" href="/vets.html">Veterinarians</a></li> -->
-                <li><a class="nav-link" href="/owners/new">Add Owner</a></li>
+                <li><a class="nav-link" href="/about">About</a></li>
                 <li><a class="nav-link" href="/contact">Contact</a></li>
             </ul>
         </div>
     </div>
-  </nav>
+</nav>
 
-  <h2>Find Owners</h2>
+<section class="terms-section">
+    <div class="container">
+        <h2>Terms and Conditions</h2>
+        <p>Please read these terms and conditions carefully before using our services.</p>
 
-<form th:object="${owner}" th:action="@{/owners}" method="get"
-    class="form-horizontal" id="search-owner-form">
-    
-    <div class="form-group">
-        <label for="lastName">Last Name</label>
-        <input id="lastName" class="form-control" th:field="*{lastName}" size="30" maxlength="80" />
-        <span class="help-inline">
-            <div th:if="${#fields.hasAnyErrors()}">
-                <p th:each="err : ${#fields.allErrors()}" th:text="${err}">Error</p>
-            </div>
-        </span>
+        <h3>1. Introduction</h3>
+        <p>By accessing our website and booking a stay at our pet hotel, you agree to be bound by these terms and conditions.</p>
+
+        <h3>2. Services</h3>
+        <p>We provide a variety of pet care services including accommodation, feeding, and playtime. All services are subject to availability.</p>
+
+        <h3>3. Payment</h3>
+        <ul>
+            <li>Payment for services must be made in advance.</li>
+            <li>We accept various payment methods, including credit/debit cards and online transfers.</li>
+        </ul>
+
+        <h3>4. Cancellations</h3>
+        <ul>
+            <li>Cancellations must be made at least 24 hours before the scheduled stay.</li>
+            <li>A cancellation fee may apply depending on the timing of the cancellation.</li>
+        </ul>
+
+        <h3>5. Liability</h3>
+        <p>We are not liable for any injuries or damages that occur during the stay, except in cases of gross negligence on our part.</p>
+
+        <h3>6. Privacy Policy</h3>
+        <p>We value your privacy. Please read our privacy policy to understand how we collect, use, and protect your personal information.</p>
+
+        <h3>7. Contact</h3>
+        <p>If you have any questions about these terms, please contact us at <strong>petcare@gmail.com</strong>.</p>
+
+        <div class="agreement-checkbox">
+            <input type="checkbox" id="agree-terms" required>
+            <label for="agree-terms">I agree to the terms and conditions</label>
+        </div>
+
+        <button class="btn" type="submit">Proceed</button>
     </div>
+</section>
 
-    <div class="form-buttons">
-        <button type="submit" class="btn btn-primary">Find Owner</button>
-        <a class="btn btn-primary" th:href="@{/owners/new}">Add Owner</a>
-    </div>
-</form>
-
-
+<!-- Footer Include -->
 <div th:replace="~{footer}"></div>
-
 
 </body>
 </html>

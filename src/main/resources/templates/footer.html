@@ -1,0 +1,120 @@
+<style>
+    
+footer {
+    background: #142646;
+    color: white;
+    padding: 30px 0;
+    margin-top: 100px !important;
+}
+
+footer img {
+    height: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #0092b1;
+}
+
+footer i {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+footer i:hover {
+    color: #0092b1;
+}
+
+/* Copyright Style */
+footer small {
+    font-size: 12px;
+    color: #aaa;
+}
+
+footer small a {
+    color: #ffc107;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer small a:hover {
+    color: #00c8ff;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    footer .row > div {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
+
+</style>
+
+<footer>
+    <div class="container">
+        <div class="row align-items-center text-center text-md-start">
+
+            <!-- Logo -->
+            <div class="col-md-3 mb-3 mb-md-0">
+                <img src="/resources/images/footer-pet-logo.svg" alt="Logo" style="height: 50px;">
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-3 mb-3 mb-md-0">
+                <p style="margin: 2px auto; color: #fff;">PetCare@yahoo.com</p>
+                <p style="margin: 2px auto; color: #fff;">+880 1900-000000</p> <!-- th:text="${email} -->
+            </div>
+
+            <!-- Page Links -->
+            <div class="col-md-3 mb-3 mb-md-0">
+                <a href="/privacy">Privary Policy</a> <br>
+                <a href="/terms">Terms & Conditions</a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="col-md-3">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="row mt-3 text-center">
+            <div class="col-12">
+                <!-- <small>
+                    Copyright © 2025 Pet Care | All Rights Reserved | Developed by 
+                    <a th:href="${developerGithub}" target="_blank" style="color: #ffc107; text-decoration: none;">
+                        <span th:text="${developer}"></span>
+                    </a>
+                </small> -->
+                <small>
+                    Copyright © 2025 Pet Care | All Rights Reserved | Developed by 
+                    <a href="https://github.com/Trisha-SWE" target="_blank" style="color: #ffc107; text-decoration: none;">
+                        Rukaiya Akter Trisha
+                    </a>
+                </small>
+
+            </div>
+        </div>
+
+    </div>
+</footer>

@@ -19,108 +19,48 @@
     <link rel="stylesheet" th:href="@{/resources/css/petclinic.css}" />
 </head>
 <body>
-<style>
-/* Form Title */
-h2 {
-    text-align: center;
-    font-size: 28px;
-    color: #0092b1;
+<style> 
+/* Privacy Section */
+.privacy-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.privacy-section h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
     font-weight: bold;
-    margin-top: 100px;
-    text-transform: uppercase;
+    color: #333;
+    margin: 60px auto 20px auto;
 }
 
-.form-horizontal {
-    max-width: 500px;
-    margin: auto;
-}
-
-/* Centering the Form */
-#add-owner-form {
-    max-width: 600px;
-    margin: 20px auto;
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Form Labels */
-#add-owner-form label {
+.privacy-section h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
     font-weight: bold;
-    font-size: 16px;
-    color: #444;
-    margin-bottom: 5px;
-    display: block;
-    text-transform: uppercase;
+    color: #333;
+    margin-top: 50px;
 }
 
-/* Form Input */
-#add-owner-form input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #0092b1;
-    border-radius: 5px;
+.privacy-section p {
+    font-family: "Arial", sans-serif;
     font-size: 16px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.privacy-section ul {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.privacy-section ul li {
     margin-bottom: 10px;
 }
-
-/* Focus Effect */
-#add-owner-form input:focus {
-    border-color: #007a94;
-    box-shadow: 0px 0px 5px rgba(0, 146, 177, 0.5);
-    outline: none;
-}
-
-/* Error Messages */
-.help-inline p {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-}
-
-/* Button Styling */
-.form-buttons {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.btn-primary {
-    background: #0092b1;
-    border: none;
-    padding: 7px 20px;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 5px;
-    color: #fff;
-    text-transform: uppercase;
-    transition: 0.3s ease-in-out;
-    width: 48%;
-    text-align: center;
-}
-
-.btn-primary:hover {
-    background: #007a94;
-    transform: scale(1.05);
-}
-
-/* Form Group Styling */
-#add-owner-form .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .btn-primary {
-        width: 100%;
-    }
-}
-
 
 /* Fixed Navbar */
 .navbar {
@@ -141,7 +81,7 @@ h2 {
     width: auto;
     margin-top: 0px;
 }
-.navbar a.navbar-brand {
+.navbar a.navbar-brand{
     background: none;
 }
 /* Flexbox to separate logo left & menu right */
@@ -220,6 +160,7 @@ h2 {
         color: #079fc1;
     }
 }
+
 </style>
 
 
@@ -241,37 +182,40 @@ h2 {
                 <li><a class="nav-link" href="/">Home</a></li>
                 <!-- <li><a class="nav-link" href="/owners/find">Find Owners</a></li>
                 <li><a class="nav-link" href="/vets.html">Veterinarians</a></li> -->
-                <li><a class="nav-link" href="/owners/new">Add Owner</a></li>
+                <li><a class="nav-link" href="/about">About</a></li>
                 <li><a class="nav-link" href="/contact">Contact</a></li>
             </ul>
         </div>
     </div>
   </nav>
+  
+    <section class="privacy-section">
+        <div class="container">
+            <h2>Privacy Policy</h2>
+            <p>Your privacy is important to us. This policy explains how we collect, use, and protect your personal information.</p>
 
-  <h2>Find Owners</h2>
+            <h3>Information We Collect</h3>
+            <p>We may collect personal information such as name, contact details, and pet details when you book a stay at our pet hotel.</p>
 
-<form th:object="${owner}" th:action="@{/owners}" method="get"
-    class="form-horizontal" id="search-owner-form">
-    
-    <div class="form-group">
-        <label for="lastName">Last Name</label>
-        <input id="lastName" class="form-control" th:field="*{lastName}" size="30" maxlength="80" />
-        <span class="help-inline">
-            <div th:if="${#fields.hasAnyErrors()}">
-                <p th:each="err : ${#fields.allErrors()}" th:text="${err}">Error</p>
-            </div>
-        </span>
-    </div>
+            <h3>How We Use Your Information</h3>
+            <ul>
+                <li>To provide pet care services</li>
+                <li>To communicate with you about your booking</li>
+                <li>To improve our services</li>
+                <li>To comply with legal obligations</li>
+            </ul>
 
-    <div class="form-buttons">
-        <button type="submit" class="btn btn-primary">Find Owner</button>
-        <a class="btn btn-primary" th:href="@{/owners/new}">Add Owner</a>
-    </div>
-</form>
+            <h3>Data Security</h3>
+            <p>We ensure the protection of your data through encryption and secure servers. We do not share your information with third parties.</p>
 
+            <h3>Contact Us</h3>
+            <p>If you have any questions regarding our privacy policy, please contact us at <strong>petcare@gmail.com</strong>.</p>
+        </div>
+    </section>
 
-<div th:replace="~{footer}"></div>
-
+    <!-- <footer th:replace="~{fragments/footer :: footer}"></footer> -->
+       <!-- Footer Include -->
+   <div th:replace="~{footer}"></div>
 
 </body>
 </html>
