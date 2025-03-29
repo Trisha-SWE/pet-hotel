@@ -43,7 +43,12 @@
         .title-p {
             text-align: center;
             padding: 0px 15px 20px 15px;
-            margin: auto;
+            margin: 10px auto;
+            font-size: 14px;
+        }
+        .customer-title-p {
+            padding: 0px 15px 20px 15px;
+            margin: 30px auto;
             font-size: 14px;
         }
         .room-card {
@@ -161,6 +166,88 @@
                 padding: 0 25px;
             }
         }
+
+/* Customer slide show */
+.customer-section {
+    text-align: center;
+    padding: 40px 5%;
+    background: #f8f9fa;
+}
+
+.customer-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.customer-slider-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.customer-slider {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.customer-card {
+    width: calc(25% - 20px);
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    flex-shrink: 0;
+}
+
+.customer-card:hover {
+    transform: scale(1.05);
+}
+
+.customer-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffcc00;
+    margin-bottom: 10px;
+}
+
+.customer-card h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #0092b1;
+}
+
+.customer-card p {
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+.stars {
+    font-size: 18px;
+    color: #ffcc00;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1124px) {
+    .customer-card {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .customer-card {
+        width: calc(100% - 20px);
+    }
+}
+
 
 
 /* Banner Style */
@@ -538,6 +625,110 @@
   </div>
 </div>
 
+
+<section class="customer-section">
+    <h2>Our Happy <span>Customers</span></h2>
+    <p class="customer-title-p">We take pride in providing the best care for your beloved pets. See what our happy customers have to say about our services!</p>
+    <div class="customer-slider-wrapper">
+        <div class="customer-slider">
+            <div class="customer-card">
+                <img class="customer-img" src="../resources/images/user-1.jpg" alt="Rukaiya Trisha">
+                <h4>Tom</h4>
+                <p><b>Address:</b> Faridpur</p>
+                <p><b>Owner:</b> Rukaiya Trisha</p>
+                <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+
+            </div>
+
+            <div class="customer-card">
+                <img class="customer-img" src="../resources/images/user-2.jpg" alt="Bisty Khatun">
+                <h4>Dorimon</h4>
+                <p><b>Address:</b> Noakhali</p>
+                <p><b>Owner:</b> Bisty Khatun</p>
+                <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
+            </div>
+
+            <div class="customer-card">
+                <img class="customer-img" src="../resources/images/user-3.jpg" alt="Jesmin Jenia">
+                <h4>Bante</h4>
+                <p><b>Address:</b> Dhaka</p>
+                <p><b>Owner:</b> Jesmin Jenia</p>
+                <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+            </div>
+
+            <div class="customer-card">
+                <img class="customer-img" src="../resources/images/user-4.webp" alt="Sumaiya Jemi">
+                <h4>Eglu</h4>
+                <p><b>Address:</b> Dhaka</p>
+                <p><b>Owner:</b> Sumaiya Jemi</p>
+                <div class="stars">&#9733; &#9733; &#9733; &#9734; &#9734;</div>
+            </div>
+
+            <div class="customer-card">
+                <img class="customer-img" src="../resources/images/user-5.jpg" alt="Samia Mahbuba">
+                <h4>Motu</h4>
+                <p><b>Address:</b> Khulna</p>
+                <p><b>Owner:</b> Samia Mahbuba</p>
+                <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+            </div>
+
+            <div class="customer-card">
+                <img class="customer-img" src="../resources/images/user-6.jpg" alt="Samia Mahbuba">
+                <h4>Patlu</h4>
+                <p><b>Address:</b> Chandpur</p>
+                <p><b>Owner:</b> Ananna Maisha</p>
+                <div class="stars">&#9733; &#9733; &#9733; &#9734; &#9734;</div>
+            </div>
+
+            <div class="customer-card">
+                <img class="customer-img" src="../resources/images/user-7.jpg" alt="Samia Mahbuba">
+                <h4>Jeems</h4>
+                <p><b>Address:</b> Faridpur</p>
+                <p><b>Owner:</b> Samanta Jeni</p>
+                <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+            </div>
+
+            <div class="customer-card">
+                <img class="customer-img" src="../resources/images/user-8.webp" alt="Samia Mahbuba">
+                <h4>Pushpa</h4>
+                <p><b>Address:</b> Natore</p>
+                <p><b>Owner:</b> Maya Sanjida</p>
+                <div class="stars">&#9733; &#9733; &#9733; &#9734; &#9734;</div>
+            </div>
+
+            <div class="customer-card">
+                <img class="customer-img" src="../resources/images/user-9.jpg" alt="Samia Mahbuba">
+                <h4>Mew</h4>
+                <p><b>Address:</b> Kushtia</p>
+                <p><b>Owner:</b> Moriom Khadiza</p>
+                <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector(".customer-slider");
+    const cards = document.querySelectorAll(".customer-card");
+    let index = 0;
+
+    function autoSlide() {
+        index++;
+
+        if (index >= cards.length) {
+            index = 0;
+        }
+
+        let translateX = -index * (cards[0].offsetWidth + 20); 
+        slider.style.transform = `translateX(${translateX}px)`;
+    }
+
+    setInterval(autoSlide, 4500); // Slide every 4.5 seconds
+});
+
+</script>
 
    <!-- Footer Include -->
    <div th:replace="~{footer}"></div>
