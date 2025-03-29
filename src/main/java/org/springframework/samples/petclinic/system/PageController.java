@@ -10,7 +10,6 @@ public class PageController {
     public String about() {
         return "about";
     }
-
     @GetMapping("/privacy")
     public String privacy() {
         return "privacy";
@@ -18,5 +17,9 @@ public class PageController {
     @GetMapping("/terms")
     public String terms() {
         return "terms";
+    }
+    @GetMapping("/contact")
+    public String contact() {
+        return "contact";
     }
 }
