@@ -1,12 +1,76 @@
 <style>
-    
 footer {
     background: #142646;
     color: white;
-    padding: 30px 0;
-    margin-top: 100px !important;
+    padding: 50px 0 30px 0;
+    margin-top: 150px !important;
+    position: relative;
+    overflow: hidden;
 }
 
+/* ====== Circle Shapes ====== */
+footer .circle1, footer .circle2, footer .circle3 {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+footer .circle1 {
+    width: 80px;
+    height: 80px;
+    background: rgba(173, 216, 230, 0.8); /* Light Blue */
+    top: 20px;
+    left: 15%;
+}
+
+footer .circle2 {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 105, 180, 0.7); /* Pink */
+    top: 80px;
+    right: 10%;
+}
+
+footer .circle3 {
+    width: 70px;
+    height: 70px;
+    background: rgba(147, 112, 219, 0.7); /* Light Purple */
+    bottom: 20%;
+    left: 5%;
+}
+
+/* ====== Square Shapes ====== */
+footer .square1, footer .square2, footer .square3 {
+    position: absolute;
+    opacity: 0.5;
+    transform: rotate(25deg);
+}
+
+footer .square1 {
+    width: 60px;
+    height: 60px;
+    background: rgba(100, 149, 237, 0.8); /* Cornflower Blue */
+    top: 50%;
+    left: 10%;
+}
+
+footer .square2 {
+    width: 40px;
+    height: 40px;
+    background: rgba(221, 160, 221, 0.8); /* Plum */
+    bottom: 15%;
+    right: 20%;
+}
+
+footer .square3 {
+    width: 50px;
+    height: 50px;
+    background: rgba(135, 206, 250, 0.8); /* Sky Blue */
+    top: 30%;
+    right: 5%;
+}
+
+/* Rest footer style (unchanged) */
 footer img {
     height: 50px;
 }
@@ -38,7 +102,6 @@ footer i:hover {
     color: #0092b1;
 }
 
-/* Copyright Style */
 footer small {
     font-size: 12px;
     color: #aaa;
@@ -65,6 +128,14 @@ footer small a:hover {
 </style>
 
 <footer>
+    <!-- Background Shapes -->
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="square1"></div>
+    <div class="square2"></div>
+    <div class="square3"></div>
+
     <div class="container">
         <div class="row align-items-center text-center text-md-start">
 
@@ -75,13 +146,13 @@ footer small a:hover {
 
             <!-- Contact Info -->
             <div class="col-md-3 mb-3 mb-md-0">
-                <p style="margin: 2px auto; color: #fff;">PetCare@yahoo.com</p>
-                <p style="margin: 2px auto; color: #fff;">+880 1900-000000</p> <!-- th:text="${email} -->
+                <p style="margin: 2px auto; color: #fff;">Trisha292@diu.edu.bd</p> <br>
+                <p style="margin: 2px auto; color: #fff;">+880 1900-000000</p>
             </div>
 
             <!-- Page Links -->
             <div class="col-md-3 mb-3 mb-md-0">
-                <a href="/privacy">Privary Policy</a> <br>
+                <a href="/privacy">Privacy Policy</a> <br> <br>
                 <a href="/terms">Terms & Conditions</a>
             </div>
 
@@ -100,19 +171,12 @@ footer small a:hover {
         <!-- Copyright -->
         <div class="row mt-3 text-center">
             <div class="col-12">
-                <!-- <small>
-                    Copyright © 2025 Pet Care | All Rights Reserved | Developed by 
-                    <a th:href="${developerGithub}" target="_blank" style="color: #ffc107; text-decoration: none;">
-                        <span th:text="${developer}"></span>
-                    </a>
-                </small> -->
                 <small>
                     Copyright © 2025 Pet Care | All Rights Reserved | Developed by 
                     <a href="https://github.com/Trisha-SWE" target="_blank" style="color: #ffc107; text-decoration: none;">
                         Rukaiya Akter Trisha
                     </a>
                 </small>
-
             </div>
         </div>
 
