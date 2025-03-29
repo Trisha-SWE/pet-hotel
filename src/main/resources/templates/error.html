@@ -29,7 +29,45 @@
 
     
     <style>
-      body {
+              body {
+          background: #f8f9fa;
+          font-family: Arial, sans-serif;
+          color: #333;
+          text-align: center;
+          padding-top: 100px;
+      }
+      .pet-404{
+        margin: 80px auto;
+        padding: 0 30px;
+      }
+      .pet-404 p{
+        margin: 40px auto 10px auto;
+      }
+      h1 {
+          font-size: 6rem;
+          color: #0092b1;
+      }
+
+      p {
+          font-size: 1.2rem;
+          color: #6c757d;
+      }
+
+      .btn-primary {
+          background-color: #0092b1;
+          border: none;
+          padding: 10px 30px;
+          color: white;
+          font-size: 1rem;
+          border-radius: 5px;
+          margin-top: 20px;
+      }
+
+      .btn-primary:hover {
+          background-color: #007b93;
+      }
+
+      /* body {
           background: #f8f9fa;
           font-family: Arial, sans-serif;
           color: #333;
@@ -73,7 +111,7 @@
       }
       .btn-submit:hover {
           background: #079fc1;
-      }
+      } */
 
 /* Fixed Navbar */
 .navbar {
@@ -202,9 +240,14 @@
   </nav>
   
 
+  <div class="pet-404">
+    <h1>404</h1>
+    <p>Oops! The page you are looking for does not exist.</p>
+    <a href="/" class="btn btn-primary">Go Back to Home</a>
+  </div>
 
 
-<div class="contact-form">
+<!-- <div class="contact-form">
   <h2>Contact Us</h2>
     <form th:action="@{/contact}" method="post">
         <div class="form-group">
@@ -229,7 +272,7 @@
 
         <button type="submit" class="btn-submit">Send Message</button>
     </form>
-</div>
+</div> -->
 
 
 <div th:replace="~{footer}"></div>

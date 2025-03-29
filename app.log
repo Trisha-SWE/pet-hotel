@@ -1984,3 +1984,394 @@ Action:
 
 Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
 
+2025-03-29T16:43:16.820+06:00  INFO 8316 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 82 class path changes (0 additions, 1 deletion, 81 modifications)
+2025-03-29T16:43:16.821+06:00  INFO 8316 --- [Thread-111] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-29T16:43:16.827+06:00  INFO 8316 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-29T16:43:16.830+06:00  INFO 8316 --- [Thread-111] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:43:16.832+06:00  INFO 8316 --- [Thread-111] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Shutdown initiated...
+2025-03-29T16:43:16.835+06:00  INFO 8316 --- [Thread-111] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Shutdown completed.
+2025-03-29T16:43:17.077+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : Starting PetClinicApplication using Java 21.0.6 with PID 8316 (E:\pet-hotel\build\classes\java\main started by Administrator in E:\pet-hotel)
+2025-03-29T16:43:17.077+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-29T16:43:17.815+06:00  INFO 8384 --- [main] o.s.s.petclinic.PetClinicApplication     : Starting PetClinicApplication using Java 21.0.6 with PID 8384 (E:\pet-hotel\build\classes\java\main started by Administrator in E:\pet-hotel)
+2025-03-29T16:43:17.833+06:00  INFO 8384 --- [main] o.s.s.petclinic.PetClinicApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-29T16:43:18.485+06:00  INFO 8316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-29T16:43:18.540+06:00  INFO 8316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
+2025-03-29T16:43:19.803+06:00  INFO 8316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-29T16:43:19.806+06:00  INFO 8316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-29T16:43:19.807+06:00  INFO 8316 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-29T16:43:19.882+06:00  INFO 8316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-29T16:43:19.882+06:00  INFO 8316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2805 ms
+2025-03-29T16:43:20.718+06:00  INFO 8316 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-29T16:43:20.792+06:00  INFO 8316 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-29T16:43:20.852+06:00  INFO 8316 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-29T16:43:20.860+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Starting...
+2025-03-29T16:43:20.871+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-29 - Added connection com.mysql.cj.jdbc.ConnectionImpl@443f69e1
+2025-03-29T16:43:20.872+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Start completed.
+2025-03-29T16:43:20.873+06:00  WARN 8316 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-29T16:43:20.873+06:00  WARN 8316 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-29T16:43:20.875+06:00  INFO 8316 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-29)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-29T16:43:21.560+06:00  INFO 8316 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-29T16:43:21.794+06:00  INFO 8316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:43:22.539+06:00  INFO 8384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-29T16:43:23.069+06:00  INFO 8384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 493 ms. Found 2 JPA repository interfaces.
+2025-03-29T16:43:25.300+06:00  INFO 8316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-29T16:43:25.334+06:00  INFO 8316 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-03-29T16:43:25.481+06:00  INFO 8316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-29T16:43:25.514+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : Started PetClinicApplication in 8.512 seconds (process running for 12838.552)
+2025-03-29T16:43:25.519+06:00  INFO 8316 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-29T16:43:27.280+06:00  INFO 8316 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-29T16:43:27.283+06:00  INFO 8316 --- [Thread-115] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-29T16:43:27.297+06:00  INFO 8316 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-29T16:43:27.301+06:00  INFO 8316 --- [Thread-115] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:43:27.303+06:00  INFO 8316 --- [Thread-115] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Shutdown initiated...
+2025-03-29T16:43:27.317+06:00  INFO 8316 --- [Thread-115] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Shutdown completed.
+2025-03-29T16:43:27.663+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : Starting PetClinicApplication using Java 21.0.6 with PID 8316 (E:\pet-hotel\build\classes\java\main started by Administrator in E:\pet-hotel)
+2025-03-29T16:43:27.663+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-29T16:43:29.278+06:00  INFO 8316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-29T16:43:29.321+06:00  INFO 8316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2025-03-29T16:43:30.144+06:00  INFO 8316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-29T16:43:30.146+06:00  INFO 8316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-29T16:43:30.146+06:00  INFO 8316 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-29T16:43:30.215+06:00  INFO 8316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-29T16:43:30.215+06:00  INFO 8316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2542 ms
+2025-03-29T16:43:30.764+06:00  INFO 8316 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-29T16:43:30.782+06:00  INFO 8316 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-29T16:43:30.829+06:00  INFO 8316 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-29T16:43:30.833+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Starting...
+2025-03-29T16:43:30.841+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-30 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a66b682
+2025-03-29T16:43:30.842+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Start completed.
+2025-03-29T16:43:30.843+06:00  WARN 8316 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-29T16:43:30.843+06:00  WARN 8316 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-29T16:43:30.844+06:00  INFO 8316 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-30)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-29T16:43:31.319+06:00  INFO 8316 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-29T16:43:31.437+06:00  INFO 8316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:43:34.428+06:00  INFO 8316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-29T16:43:34.480+06:00  INFO 8316 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-03-29T16:43:34.731+06:00  INFO 8316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-29T16:43:34.813+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : Started PetClinicApplication in 7.271 seconds (process running for 12847.85)
+2025-03-29T16:43:34.825+06:00  INFO 8316 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-29T16:43:37.221+06:00  INFO 8316 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2025-03-29T16:43:37.224+06:00  INFO 8316 --- [Thread-119] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-29T16:43:37.237+06:00  INFO 8316 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-29T16:43:37.242+06:00  INFO 8316 --- [Thread-119] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:43:37.245+06:00  INFO 8316 --- [Thread-119] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Shutdown initiated...
+2025-03-29T16:43:37.250+06:00  INFO 8316 --- [Thread-119] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Shutdown completed.
+2025-03-29T16:43:37.607+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : Starting PetClinicApplication using Java 21.0.6 with PID 8316 (E:\pet-hotel\build\classes\java\main started by Administrator in E:\pet-hotel)
+2025-03-29T16:43:37.607+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-29T16:43:39.197+06:00  INFO 8316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-29T16:43:39.236+06:00  INFO 8316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+2025-03-29T16:43:39.809+06:00  INFO 8316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-29T16:43:39.810+06:00  INFO 8316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-29T16:43:39.811+06:00  INFO 8316 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-29T16:43:39.875+06:00  INFO 8316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-29T16:43:39.876+06:00  INFO 8316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2223 ms
+2025-03-29T16:43:40.652+06:00  INFO 8316 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-29T16:43:40.676+06:00  INFO 8316 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-29T16:43:40.701+06:00  INFO 8316 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-29T16:43:40.701+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Starting...
+2025-03-29T16:43:40.701+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-31 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b4e44d9
+2025-03-29T16:43:40.701+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Start completed.
+2025-03-29T16:43:40.715+06:00  WARN 8316 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-29T16:43:40.715+06:00  WARN 8316 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-29T16:43:40.717+06:00  INFO 8316 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-31)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-29T16:43:41.022+06:00  INFO 796 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : Starting PetClinicApplication using Java 21.0.6 with PID 796 (E:\pet-hotel\build\classes\java\main started by Administrator in E:\pet-hotel)
+2025-03-29T16:43:41.038+06:00  INFO 796 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-29T16:43:41.086+06:00  INFO 8316 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-29T16:43:41.229+06:00  INFO 796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-29T16:43:41.229+06:00  INFO 796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-29T16:43:41.240+06:00  INFO 8316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:43:44.069+06:00  INFO 8316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-29T16:43:44.097+06:00  INFO 8316 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-03-29T16:43:44.219+06:00  INFO 8316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-29T16:43:44.240+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : Started PetClinicApplication in 6.755 seconds (process running for 12857.277)
+2025-03-29T16:43:44.243+06:00  INFO 8316 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-29T16:43:44.587+06:00  INFO 796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-29T16:43:44.853+06:00  INFO 796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 240 ms. Found 2 JPA repository interfaces.
+2025-03-29T16:43:45.581+06:00  INFO 8316 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2025-03-29T16:43:45.581+06:00  INFO 8316 --- [Thread-123] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-29T16:43:45.581+06:00  INFO 8316 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-29T16:43:45.598+06:00  INFO 8316 --- [Thread-123] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:43:45.598+06:00  INFO 8316 --- [Thread-123] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Shutdown initiated...
+2025-03-29T16:43:45.598+06:00  INFO 8316 --- [Thread-123] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Shutdown completed.
+2025-03-29T16:43:45.849+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : Starting PetClinicApplication using Java 21.0.6 with PID 8316 (E:\pet-hotel\build\classes\java\main started by Administrator in E:\pet-hotel)
+2025-03-29T16:43:45.849+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-29T16:43:46.617+06:00  INFO 796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-29T16:43:46.643+06:00  INFO 796 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-29T16:43:46.644+06:00  INFO 796 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-29T16:43:46.703+06:00  INFO 8316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-29T16:43:46.729+06:00  INFO 8316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2025-03-29T16:43:46.733+06:00  INFO 796 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-29T16:43:46.734+06:00  INFO 796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5505 ms
+2025-03-29T16:43:47.370+06:00  INFO 8316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-29T16:43:47.371+06:00  INFO 8316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-29T16:43:47.371+06:00  INFO 8316 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-29T16:43:47.413+06:00  INFO 8316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-29T16:43:47.414+06:00  INFO 8316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1559 ms
+2025-03-29T16:43:47.705+06:00  INFO 796 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-29T16:43:47.861+06:00  INFO 8316 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-29T16:43:47.873+06:00  INFO 8316 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-29T16:43:47.898+06:00  INFO 796 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-03-29T16:43:47.900+06:00  INFO 8316 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-29T16:43:47.903+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Starting...
+2025-03-29T16:43:47.907+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-32 - Added connection com.mysql.cj.jdbc.ConnectionImpl@182dd83f
+2025-03-29T16:43:47.908+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Start completed.
+2025-03-29T16:43:47.909+06:00  WARN 8316 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-29T16:43:47.909+06:00  WARN 8316 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-29T16:43:47.909+06:00  INFO 8316 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-32)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-29T16:43:47.975+06:00  INFO 796 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-29T16:43:48.125+06:00  INFO 8316 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-29T16:43:48.197+06:00  INFO 8316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:43:48.501+06:00  INFO 796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-29T16:43:48.549+06:00  INFO 796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-29T16:43:48.913+06:00  INFO 796 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6fcdab7b
+2025-03-29T16:43:48.918+06:00  INFO 796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-29T16:43:48.971+06:00  WARN 796 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-29T16:43:48.973+06:00  WARN 796 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-29T16:43:49.003+06:00  INFO 796 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-29T16:43:49.798+06:00  INFO 8316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-29T16:43:49.816+06:00  INFO 8316 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-03-29T16:43:49.897+06:00  INFO 8316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-29T16:43:49.914+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : Started PetClinicApplication in 4.116 seconds (process running for 12862.951)
+2025-03-29T16:43:49.919+06:00  INFO 8316 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-29T16:43:51.283+06:00  INFO 796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-29T16:43:51.497+06:00  INFO 796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:43:52.151+06:00  INFO 796 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-29T16:43:54.510+06:00  WARN 796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-03-29T16:43:54.533+06:00  INFO 796 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-03-29T16:43:54.658+06:00  WARN 796 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-03-29T16:43:54.661+06:00  INFO 796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:43:54.664+06:00  INFO 796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-29T16:43:54.672+06:00  INFO 796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-29T16:43:54.707+06:00  INFO 796 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-29T16:43:54.753+06:00 ERROR 796 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-03-29T16:44:10.969+06:00  INFO 8316 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-29T16:44:10.969+06:00  INFO 8316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-29T16:44:10.970+06:00  INFO 8316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-29T16:51:40.364+06:00  INFO 8316 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 82 class path changes (0 additions, 1 deletion, 81 modifications)
+2025-03-29T16:51:40.366+06:00  INFO 8316 --- [Thread-127] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-29T16:51:40.374+06:00  INFO 8316 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-29T16:51:40.400+06:00  INFO 8316 --- [Thread-127] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:51:40.411+06:00  INFO 8316 --- [Thread-127] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Shutdown initiated...
+2025-03-29T16:51:40.416+06:00  INFO 8316 --- [Thread-127] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Shutdown completed.
+2025-03-29T16:51:40.733+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : Starting PetClinicApplication using Java 21.0.6 with PID 8316 (E:\pet-hotel\build\classes\java\main started by Administrator in E:\pet-hotel)
+2025-03-29T16:51:40.733+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-29T16:51:41.322+06:00  INFO 14956 --- [main] o.s.s.petclinic.PetClinicApplication     : Starting PetClinicApplication using Java 21.0.6 with PID 14956 (E:\pet-hotel\build\classes\java\main started by Administrator in E:\pet-hotel)
+2025-03-29T16:51:41.340+06:00  INFO 14956 --- [main] o.s.s.petclinic.PetClinicApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-29T16:51:42.951+06:00  INFO 8316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-29T16:51:43.009+06:00  INFO 8316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2025-03-29T16:51:44.268+06:00  INFO 8316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-29T16:51:44.273+06:00  INFO 8316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-29T16:51:44.273+06:00  INFO 8316 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-29T16:51:44.347+06:00  INFO 8316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-29T16:51:44.347+06:00  INFO 8316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3602 ms
+2025-03-29T16:51:45.230+06:00  INFO 8316 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-29T16:51:45.251+06:00  INFO 8316 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-29T16:51:45.288+06:00  INFO 8316 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-29T16:51:45.288+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-33 - Starting...
+2025-03-29T16:51:45.306+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-33 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78b682d5
+2025-03-29T16:51:45.307+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-33 - Start completed.
+2025-03-29T16:51:45.308+06:00  WARN 8316 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-29T16:51:45.308+06:00  WARN 8316 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-29T16:51:45.309+06:00  INFO 8316 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-33)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-29T16:51:45.601+06:00  INFO 14956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-29T16:51:45.652+06:00  INFO 8316 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-29T16:51:45.802+06:00  INFO 8316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:51:46.127+06:00  INFO 14956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 475 ms. Found 2 JPA repository interfaces.
+2025-03-29T16:51:49.688+06:00  INFO 8316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-29T16:51:49.725+06:00  INFO 8316 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-03-29T16:51:49.852+06:00  INFO 8316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-29T16:51:49.880+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : Started PetClinicApplication in 9.253 seconds (process running for 13342.917)
+2025-03-29T16:51:49.884+06:00  INFO 8316 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-29T16:51:51.274+06:00  INFO 8316 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-29T16:51:51.277+06:00  INFO 8316 --- [Thread-131] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-29T16:51:51.285+06:00  INFO 8316 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-29T16:51:51.290+06:00  INFO 8316 --- [Thread-131] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:51:51.291+06:00  INFO 8316 --- [Thread-131] com.zaxxer.hikari.HikariDataSource       : HikariPool-33 - Shutdown initiated...
+2025-03-29T16:51:51.294+06:00  INFO 8316 --- [Thread-131] com.zaxxer.hikari.HikariDataSource       : HikariPool-33 - Shutdown completed.
+2025-03-29T16:51:51.659+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : Starting PetClinicApplication using Java 21.0.6 with PID 8316 (E:\pet-hotel\build\classes\java\main started by Administrator in E:\pet-hotel)
+2025-03-29T16:51:51.659+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-29T16:51:52.845+06:00  INFO 8316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-29T16:51:52.876+06:00  INFO 8316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2025-03-29T16:51:53.558+06:00  INFO 8316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-29T16:51:53.559+06:00  INFO 8316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-29T16:51:53.559+06:00  INFO 8316 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-29T16:51:53.622+06:00  INFO 8316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-29T16:51:53.622+06:00  INFO 8316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1958 ms
+2025-03-29T16:51:54.336+06:00  INFO 8316 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-29T16:51:54.348+06:00  INFO 8316 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-29T16:51:54.378+06:00  INFO 8316 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-29T16:51:54.380+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-34 - Starting...
+2025-03-29T16:51:54.385+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-34 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20fa68bf
+2025-03-29T16:51:54.386+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-34 - Start completed.
+2025-03-29T16:51:54.387+06:00  WARN 8316 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-29T16:51:54.387+06:00  WARN 8316 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-29T16:51:54.387+06:00  INFO 8316 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-34)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-29T16:51:54.743+06:00  INFO 8316 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-29T16:51:54.861+06:00  INFO 8316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:51:57.589+06:00  INFO 8316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-29T16:51:57.618+06:00  INFO 8316 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-03-29T16:51:57.769+06:00  INFO 8316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-29T16:51:57.797+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : Started PetClinicApplication in 6.205 seconds (process running for 13350.834)
+2025-03-29T16:51:57.801+06:00  INFO 8316 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-29T16:51:59.158+06:00  INFO 8316 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-03-29T16:51:59.160+06:00  INFO 8316 --- [Thread-135] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-29T16:51:59.168+06:00  INFO 8316 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-29T16:51:59.172+06:00  INFO 8316 --- [Thread-135] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:51:59.173+06:00  INFO 8316 --- [Thread-135] com.zaxxer.hikari.HikariDataSource       : HikariPool-34 - Shutdown initiated...
+2025-03-29T16:51:59.178+06:00  INFO 8316 --- [Thread-135] com.zaxxer.hikari.HikariDataSource       : HikariPool-34 - Shutdown completed.
+2025-03-29T16:51:59.531+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : Starting PetClinicApplication using Java 21.0.6 with PID 8316 (E:\pet-hotel\build\classes\java\main started by Administrator in E:\pet-hotel)
+2025-03-29T16:51:59.532+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-29T16:52:01.080+06:00  INFO 8316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-29T16:52:01.114+06:00  INFO 8316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2025-03-29T16:52:01.482+06:00  INFO 1428 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : Starting PetClinicApplication using Java 21.0.6 with PID 1428 (E:\pet-hotel\build\classes\java\main started by Administrator in E:\pet-hotel)
+2025-03-29T16:52:01.492+06:00  INFO 1428 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-29T16:52:01.623+06:00  INFO 1428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-29T16:52:01.624+06:00  INFO 1428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-29T16:52:01.730+06:00  INFO 8316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-29T16:52:01.732+06:00  INFO 8316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-29T16:52:01.732+06:00  INFO 8316 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-29T16:52:01.796+06:00  INFO 8316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-29T16:52:01.797+06:00  INFO 8316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2257 ms
+2025-03-29T16:52:02.434+06:00  INFO 8316 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-29T16:52:02.449+06:00  INFO 8316 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-29T16:52:02.479+06:00  INFO 8316 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-29T16:52:02.482+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-35 - Starting...
+2025-03-29T16:52:02.488+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-35 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66642705
+2025-03-29T16:52:02.489+06:00  INFO 8316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-35 - Start completed.
+2025-03-29T16:52:02.490+06:00  WARN 8316 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-29T16:52:02.490+06:00  WARN 8316 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-29T16:52:02.490+06:00  INFO 8316 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-35)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-29T16:52:02.740+06:00  INFO 8316 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-29T16:52:02.840+06:00  INFO 8316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:52:04.487+06:00  INFO 1428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-29T16:52:05.025+06:00  INFO 8316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-29T16:52:05.072+06:00  INFO 8316 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-03-29T16:52:05.170+06:00  INFO 1428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 663 ms. Found 2 JPA repository interfaces.
+2025-03-29T16:52:05.249+06:00  INFO 8316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-29T16:52:05.289+06:00  INFO 8316 --- [restartedMain] o.s.s.petclinic.PetClinicApplication     : Started PetClinicApplication in 5.841 seconds (process running for 13358.326)
+2025-03-29T16:52:05.297+06:00  INFO 8316 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-29T16:52:06.864+06:00  INFO 1428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-29T16:52:06.880+06:00  INFO 1428 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-29T16:52:06.880+06:00  INFO 1428 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-29T16:52:06.958+06:00  INFO 1428 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-29T16:52:06.958+06:00  INFO 1428 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5332 ms
+2025-03-29T16:52:07.810+06:00  INFO 1428 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-29T16:52:08.030+06:00  INFO 1428 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-03-29T16:52:08.102+06:00  INFO 1428 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-29T16:52:08.542+06:00  INFO 1428 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-29T16:52:08.598+06:00  INFO 1428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-29T16:52:08.808+06:00  INFO 1428 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@796452d2
+2025-03-29T16:52:08.808+06:00  INFO 1428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-29T16:52:08.844+06:00  WARN 1428 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-29T16:52:08.845+06:00  WARN 1428 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-29T16:52:08.860+06:00  INFO 1428 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-29T16:52:10.391+06:00  INFO 1428 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-29T16:52:10.560+06:00  INFO 1428 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:52:11.080+06:00  INFO 1428 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-29T16:52:13.320+06:00  WARN 1428 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-03-29T16:52:13.354+06:00  INFO 1428 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-03-29T16:52:13.468+06:00  WARN 1428 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-03-29T16:52:13.471+06:00  INFO 1428 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-29T16:52:13.474+06:00  INFO 1428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-29T16:52:13.481+06:00  INFO 1428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-29T16:52:13.504+06:00  INFO 1428 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-29T16:52:13.532+06:00 ERROR 1428 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-03-29T16:52:16.397+06:00  INFO 8316 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-29T16:52:16.397+06:00  INFO 8316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-29T16:52:16.399+06:00  INFO 8316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-29T16:52:22.885+06:00  WARN 8316 --- [http-nio-8080-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/rjre.] was not loaded as the canonical path [/rjre] did not match. Use of symlinks is one possible cause.
+2025-03-29T16:53:14.921+06:00  WARN 8316 --- [http-nio-8080-exec-3] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/rjre.] was not loaded as the canonical path [/rjre] did not match. Use of symlinks is one possible cause.
+2025-03-29T16:58:42.203+06:00  WARN 8316 --- [http-nio-8080-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/rggh.] was not loaded as the canonical path [/rggh] did not match. Use of symlinks is one possible cause.
